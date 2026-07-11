@@ -40,7 +40,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 40px 20px;
+            padding: 24px 16px;
         }
 
         .container {
@@ -48,7 +48,7 @@
             background: var(--card);
             border-radius: 18px;
             box-shadow: 0 24px 60px rgba(78, 19, 12, 0.18);
-            padding: 0 0 48px;
+            padding: 0 0 32px;
             max-width: 920px;
             width: 100%;
             overflow: hidden;
@@ -62,44 +62,44 @@
 
         .header {
             text-align: center;
-            padding: 46px 40px 30px;
+            padding: 26px 40px 14px;
             background:
-                radial-gradient(600px 240px at 50% 0%, rgba(217, 119, 6, 0.10), rgba(217, 119, 6, 0) 70%);
+                radial-gradient(600px 200px at 50% 0%, rgba(217, 119, 6, 0.10), rgba(217, 119, 6, 0) 70%);
         }
 
         .om {
             font-family: 'Noto Sans Devanagari', serif;
-            font-size: 2.6em;
+            font-size: 2em;
             color: var(--saffron);
             line-height: 1;
             display: block;
-            margin-bottom: 6px;
+            margin-bottom: 2px;
             text-shadow: 0 2px 6px rgba(217, 119, 6, 0.25);
         }
 
         h1 {
             font-family: 'Cormorant Garamond', 'Marcellus', serif;
-            font-size: 3.2em;
+            font-size: 3em;
             color: var(--maroon);
             letter-spacing: 0.5px;
             font-weight: 700;
-            line-height: 1.1;
+            line-height: 1.05;
         }
 
         .subtitle {
             font-family: 'Marcellus', serif;
             text-transform: uppercase;
             letter-spacing: 4px;
-            font-size: 0.8em;
+            font-size: 0.78em;
             color: var(--saffron);
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .divider {
             width: 120px;
             height: 2px;
             background: linear-gradient(90deg, transparent, var(--gold-soft), transparent);
-            margin: 22px auto 0;
+            margin: 14px auto 0;
             position: relative;
         }
 
@@ -117,10 +117,10 @@
 
         .bio {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5em;
+            font-size: 1.35em;
             color: var(--ink-soft);
             font-style: italic;
-            margin: 22px auto 26px;
+            margin: 14px auto 0;
             max-width: 560px;
             padding: 0 40px;
             text-align: center;
@@ -131,6 +131,7 @@
             justify-content: center;
             gap: 18px;
             flex-wrap: wrap;
+            margin-top: 22px;
         }
 
         .social-links a {
@@ -155,8 +156,8 @@
         }
 
         .rituals-section {
-            margin: 40px 40px 0;
-            padding-top: 36px;
+            margin: 30px 40px 0;
+            padding-top: 26px;
             border-top: 1px solid var(--line);
             text-align: left;
         }
@@ -164,7 +165,7 @@
         .rituals-section h2 {
             font-family: 'Cormorant Garamond', serif;
             color: var(--maroon);
-            margin-bottom: 26px;
+            margin-bottom: 20px;
             font-size: 2.1em;
             font-weight: 700;
             text-align: center;
@@ -173,7 +174,7 @@
         .language-tabs {
             display: flex;
             gap: 10px;
-            margin-bottom: 26px;
+            margin-bottom: 22px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -206,21 +207,10 @@
         .ritual-content {
             display: none;
             background: var(--cream);
-            padding: 30px;
+            padding: 8px 30px 30px;
             border-radius: 14px;
             line-height: 1.9;
-            max-height: 620px;
-            overflow-y: auto;
             border: 1px solid var(--line);
-        }
-
-        .ritual-content::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        .ritual-content::-webkit-scrollbar-thumb {
-            background: var(--gold-soft);
-            border-radius: 8px;
         }
 
         .ritual-content.active {
@@ -236,15 +226,18 @@
         .ritual-content h3 {
             font-family: 'Cormorant Garamond', serif;
             color: var(--maroon);
-            margin: 26px 0 14px 0;
-            font-size: 1.5em;
+            margin: 28px 0 16px 0;
+            font-size: 1.45em;
             font-weight: 700;
-            padding-bottom: 8px;
-            border-bottom: 1.5px dashed var(--line);
+            padding: 12px 18px;
+            background: linear-gradient(90deg, rgba(217, 119, 6, 0.16), rgba(217, 119, 6, 0.02));
+            border-left: 4px solid var(--saffron);
+            border-radius: 8px;
+            scroll-margin-top: 70px;
         }
 
         .ritual-content h3:first-child {
-            margin-top: 0;
+            margin-top: 8px;
         }
 
         .ritual-content p {
@@ -283,6 +276,18 @@
         .highlight-red {
             color: #b3261e;
             font-weight: 600;
+        }
+
+        .benediction {
+            text-align: center;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--maroon);
+            letter-spacing: 1px;
+            margin: 28px auto 6px;
+            padding-top: 18px;
+            border-top: 1px solid var(--line);
         }
 
         .contact-info {
@@ -408,7 +413,7 @@
                     <p>ஜபித்த பிறகு காயத்ரி மஹாமந்திர ஜபம் கரிஷ்யே என்று பிராணாயாமம் உபஸ்தானம் செய்து பவித்ரத்தை அவிழ்த்து ஆசமனம் செய்து ஓம் தத்சத் ஸர்வம் ஸ்ரீப்ரஹ்மார்ப்பணமஸ்து என்று சொல்லி ஜலத்தை கீழே விடவும்.</p>
                 </div>
 
-                <p style="text-align: center; font-weight: bold;">-: சுபம் :-</p>
+                <p class="benediction">-: சுபம் :-</p>
 
             </div>
 
@@ -442,7 +447,7 @@
                     <p>इति द्वी दरबान निरस्य अपउपस्पृश्य प्राणवस्य ऋषि: इत्यारभ्य दसप्राणायाम कृत्वा। अनुवाहस्य इत्यादी गायत्री आवाहनम कृत्वा। सावित्रिया ऋषि विश्वामित्रप्रिय: निश्चित गायत्री छंद: सविता देवता गायत्री जपे विनियोग: अष्टोत्र सहस्र संख्या, अष्टोत्र सत संख्या जपेतु। जपांथे प्राणायाम कृत्व। उपस्थानम करिष्ये। उत्तमे शिखरे - यथा सुखम। अभिवादए …….….अस्मीभो:……….... कायेन……………समर्पयामी पवित्रम विसृज्य - ॐ तत्सत श्रीब्रह्मार्पणमस्तु</p>
                 </div>
 
-                <p style="text-align: center; font-weight: bold;">-: सुभम :-</p>
+                <p class="benediction">-: सुभम :-</p>
 
             </div>
 
@@ -476,7 +481,7 @@
                     <p>Remove pavithram and perform achamanam and take palmful of water and pour down saying, &ldquo;Sarvam Brahmaarpanamasthu&rdquo;.</p>
                 </div>
 
-                <p style="text-align: center; font-weight: bold;">-: Subam :-</p>
+                <p class="benediction">-: Subam :-</p>
 
             </div>
 
@@ -510,7 +515,7 @@
                     <p>ഇതി ദ്വീ: (ദർബാൻ നിരസ്യ അപഉപപ്സവ്യസ്യ). പ്രണവസ്യ ഋഷി ഇത്യാരഭ്യ ദശ പ്രാണായാമൻ കൃത്വ, ആയാത്വീതി അണ്ഡവാകസ്യ ഇത്യാതി ഗായത്രി ആവാഹനം കൃതവാ: സാവിത്രീയാ: ഋഷി, വിശ്വാമിത്ര: നിച്യദ് ഗായത്രി ചന്ദ: സവിതാ ദേവതാ - ഗായത്രി അഷ്‌ടോത്ര സഹസ്ര സംഖ്യയാ [1008] ജപേത് ഓം ഭൂ:+ഭൂർഭുവസ്വറോം. ഉത്തമേശിഖരെ + യഥാസുഖം - അഭിവാദയെ +അസ്മിഭോ - കായേന+സമർപ്പയാമി - പവിത്രം വിസൃജ്യ – ആചമ്യ………ഓം തത്സത് സർവം ശ്രീ ബ്രഹ്മർപ്പണമസ്തു</p>
                 </div>
 
-                <p style="text-align: center; font-weight: bold;">-: ശുഭം :-</p>
+                <p class="benediction">-: ശുഭം :-</p>
 
             </div>
         </div>
